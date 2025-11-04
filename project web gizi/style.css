@@ -1,0 +1,793 @@
+/* === HOME PAGE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-page {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* === HEADER === */
+.header-navbar-home {
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px #0000001a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo-area-home {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logonutricare-home {
+  width: 45px;
+  height: 45px;
+}
+
+.nutri-care-home {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.text-nutri-home{
+  color: #1a73e8;
+}
+
+.text-care-home {
+  color: #43a047;
+}
+
+.nav-links-home {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+ .btn-home-home{
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+ .btn-about-home{
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 500;
+  font-size: 16px;
+ 
+}
+
+.btn-sign-in-home {
+  background-color: #43a047;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  width: fit-content;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* === HERO SECTION === */
+.section-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 140px 80px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-content-home {
+  max-width: 550px;
+}
+
+.heading-konsultasi-home {
+  font-weight: 700;
+  font-size: 32px;
+  color: #1a73e8;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.gizi-yang-baik-home {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.link-home {
+  background-color: #43a047;
+  color: white;
+  border-radius: 25px;
+  width: fit-content;
+  padding: 10px 25px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.link-home:hover {
+  background-color: #388e3c;
+}
+
+.hero-home {
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* === FOOTER === */
+/* ====== FOOTER ====== */
+.footer-home {
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 40px 80px 0;
+  width: 100%;
+}
+
+.footer-content-home{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-info-home,
+.footer-about-home,
+.footer-contact-home {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-info-home img {
+  margin-bottom: 10px;
+}
+
+.footer-info-home p {
+  color: #e0e0e0;
+  margin-bottom: 6px;
+}
+
+.footer-about-home h3,
+.footer-contact-home h3 {
+  color: #fff;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.footer-about-home p,
+.footer-contact-home p {
+  color: #e0e0e0;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-contact-home img {
+  vertical-align: middle;
+}
+
+.footer-bottom-home {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;            
+  background-color: #1565c0;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-home {
+    padding: 40px 20px 0;
+  }
+}
+
+ .footer-content-home{
+  display: flex;
+  justify-content: space-around; /* atau coba space-evenly */
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+
+ .footer-contact-home {
+  margin-left: 70px; 
+}
+/* HOME PAGE END */
+
+
+
+
+/* LOGIN PAGE */
+
+/* ====== RESET DASAR ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-page{
+  background-color: #ffffff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* ====== HEADER ====== */
+.header-navbar-login {
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px #0000001a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo-area-login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logonutricare-login {
+  width: 45px;
+  height: 45px;
+}
+
+.nutri-care-login {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.text-nutri-login {
+  color: #1a73e8;
+}
+
+.text-care-login {
+  color: #43a047;
+}
+
+.nav-links-login {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+ .btn-home-login{
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.btn-about-login{
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
+.nav-links a:hover {
+  color: #1a73e8;
+}
+
+.btn-signin {
+  background-color: #43a047;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  
+}
+
+/* ====== LOGIN CONTAINER ====== */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  gap: 80px;
+}
+
+.login-left img {
+  width: 500px;
+  height: auto;
+}
+
+.login-box {
+  background-color: #1a73e8;
+  border-radius: 20px;
+  padding: 40px;
+  width: 380px;
+  color: #fff;
+  box-shadow: 0 4px 15px #00000025;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background-color: #43a047;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #388e3c;
+}
+
+.register-text {
+  text-align: center;
+  margin-top: 15px;
+  color: #e0e0e0;
+}
+
+.register-link {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ====== FOOTER ====== */
+.footer-login {
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 40px 80px 0;
+  width: 100%;
+}
+
+.footer-content-login {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-info-login,
+.footer-about-login,
+.footer-contact-login {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-info-login img {
+  margin-bottom: 10px;
+}
+
+.footer-info-login p {
+  color: #e0e0e0;
+  margin-bottom: 6px;
+}
+
+.footer-about-login h3,
+.footer-contact-login h3 {
+  color: #fff;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.footer-about-login p,
+.footer-contact-login p {
+  color: #e0e0e0;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-contact-login img {
+  vertical-align: middle;
+}
+
+.footer-bottom-login {
+   position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;            
+  background-color: #1565c0;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  .footer-login {
+    padding: 40px 20px 0;
+  }
+}
+
+ .footer-content-login {
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+ .footer-contact-login {
+  margin-left: 70px; 
+}
+/* LOGIN PAGE END */
+
+
+
+
+/* ABOUT PAGE */
+/* ========== GLOBAL ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-page {
+  font-family: "Poppins", Helvetica, sans-serif;
+  background-color: #43a047;
+  width: 100%;
+  color: #333;
+}
+
+/* --- NAVBAR --- */
+.header-navbar-about {
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px #0000001a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo-area-about {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logonutricare-about {
+  width: 45px;
+  height: 45px;
+}
+
+.nutri-care-about {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.text-nutri-about{
+  color: #1a73e8;
+}
+
+.text-care-about{
+  color: #43a047;
+}
+
+.nav-links-about {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+ .btn-home-about{
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+ .btn-about-about{
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 500;
+  font-size: 16px;
+ 
+}
+
+.btn-sign-in-about {
+  background-color: #43a047;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  width: fit-content;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+
+/* ========== HERO / MAIN CONTENT ========== */
+.section-utama {
+  background-color: #3ba64c;
+  width: 100%;
+  padding: 120px 100px; /* kasih jarak dari atas supaya tak ketutup navbar */
+  box-sizing: border-box;
+}
+
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Kiri */
+.frame-text {
+  max-width: 500px;
+}
+
+.frame-text .p {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.frame-text .kami-berkomitmen {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+.nutri {
+  width: 350px;
+  margin-top: 30px;
+}
+
+/* Kanan (form biru) */
+.frame-contact {
+  background-color: #1a73e8;
+  border-radius: 25px;
+  padding: 40px 50px;
+  width: 360px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.frame-contact h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.frame-contact input,
+.frame-contact textarea {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.frame-contact textarea {
+  height: 100px;
+  resize: none;
+}
+
+.frame-contact button {
+  width: 100%;
+  background-color: #43a047;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.frame-contact button:hover {
+  background-color: #2e7d32;
+}
+
+
+/* ==== BAGIAN UTAMA (HIJAU) ==== */
+.section-utama {
+  background-color: #3ba64c;
+  width: 100%;
+  padding: 120px 0; /* ruang atas bawah */
+  display: flex;
+  justify-content: center; /* posisi konten ke tengah horizontal */
+}
+
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%; /* batas lebar biar tak terlalu mepet ke tepi */
+  max-width: 1200px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  gap: 50px;
+}
+
+/* Kolom kiri */
+.frame-text {
+  flex: 1;
+  max-width: 480px;
+}
+
+.frame-text .p {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.frame-text .kami-berkomitmen {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.nutri {
+  width: 380px;
+  margin-top: 30px;
+}
+
+/* Kolom kanan (Form Biru) */
+.frame-contact {
+  flex: 1;
+  background-color: #1a73e8;
+  border-radius: 25px;
+  padding: 40px 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.frame-contact h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.frame-contact input,
+.frame-contact textarea {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.frame-contact textarea {
+  height: 100px;
+  resize: none;
+}
+
+.frame-contact button {
+  width: 100%;
+  background-color: #43a047;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.frame-contact button:hover {
+  background-color: #2e7d32;
+}
+
+/* ==== FOOTER ==== */
+.footer-about {
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 40px 80px 0;
+  width: 100%;
+  position: relative; /* hilangkan absolute agar tidak naik ke atas */
+}
+
+.footer-content-about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-info-about,
+.footer-about-about,
+.footer-contact-about {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-about-about h3,
+.footer-contact-about h3 {
+  color: #fff;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.footer-about-about p,
+.footer-contact-about p {
+  color: #e0e0e0;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-bottom-about {
+  background-color: #1565c0;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #e0e0e0;
+  width: 100%;
+}
