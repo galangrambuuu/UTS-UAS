@@ -42,7 +42,10 @@
 .nutri-care-home {
   font-weight: 700;
   font-size: 22px;
+ 
 }
+
+
 
 .text-nutri-home{
   color: #1a73e8;
@@ -498,7 +501,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 60px;
+  padding: 0 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -533,7 +536,11 @@
   display: flex;
   align-items: center;
   gap: 30px;
+  justify-content: left;
 }
+
+
+
 
  .btn-home-about{
   text-decoration: none;
@@ -652,37 +659,46 @@
 
 
 /* ==== BAGIAN UTAMA (HIJAU) ==== */
-.section-utama {
-  background-color: #3ba64c;
-  width: 100%;
-  padding: 120px 0; /* ruang atas bawah */
+
+.about-page {
+  min-height: 100vh;        /* jadikan halaman setinggi viewport */
   display: flex;
-  justify-content: center; /* posisi konten ke tengah horizontal */
+  flex-direction: column; 
 }
 
-.frame {
+
+
+.section-utama {
+  flex: 1;                  /* mengambil ruang yang tersisa */
   display: flex;
+  align-items: center;      /* vertikal center isi section */
+  justify-content: center;  /* horizontal center isi section */
+  padding: 2rem;            /* ruang di sekitar konten */
+  box-sizing: border-box;
+}
+.frame {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  gap: 2rem;
   align-items: center;
   justify-content: space-between;
-  width: 85%; /* batas lebar biar tak terlalu mepet ke tepi */
-  max-width: 1200px;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  gap: 50px;
 }
 
 /* Kolom kiri */
-.frame-text {
-  flex: 1;
-  max-width: 480px;
+.frame-text, .frame-contact {
+  flex: 1 1 0;
+  min-width: 0;            /* mencegah overflow pada flex child */
 }
 
 .frame-text .p {
   font-size: 42px;
   font-weight: 800;
+  margin-top: 20px;
   margin-bottom: 30px;
-  line-height: 1.2;
+  line-height: 1;
 }
+
 
 .frame-text .kami-berkomitmen {
   font-size: 15px;
@@ -691,9 +707,32 @@
 }
 
 .nutri {
-  width: 380px;
-  margin-top: 30px;
+  width: 70%;
+  margin-top: -30px; 
 }
+.btn-mulai {
+  display: inline-block;  /* tetap inline-block tapi margin auto untuk center */
+  margin: 16px auto 0;    /* center horizontal */
+  padding: 12px 25px;
+  background-color: #1a73e8;
+  margin-left: 80px;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.btn-mulai:hover {
+  background-color:#ffca28;
+}
+
+@media (max-width: 900px) {
+  .frame-text .nutri { width: 100%; margin-top: 10px; }
+  .btn-mulai { width: 100%; text-align: center; padding: 12px 16px; }
+}
+
 
 /* Kolom kanan (Form Biru) */
 .frame-contact {
@@ -747,12 +786,14 @@
 .footer-about {
   background-color: #1a73e8;
   color: #fff;
-  padding: 40px 80px 0;
+  padding: 1.5rem;
   width: 100%;
-  position: relative; /* hilangkan absolute agar tidak naik ke atas */
+  position:static;
+  margin-top: 0;
 }
 
 .footer-content-about {
+  
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -762,6 +803,7 @@
 .footer-info-about,
 .footer-about-about,
 .footer-contact-about {
+  margin-left: 80px;
   flex: 1;
   min-width: 250px;
   margin-bottom: 20px;
@@ -784,10 +826,25 @@
 }
 
 .footer-bottom-about {
+  position: relative;
+  left: 0;
+  transform: none;
+  width: 100%;       
+  max-width: 100%;     
   background-color: #1565c0;
   text-align: center;
   padding: 15px;
   font-size: 14px;
   color: #e0e0e0;
-  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .header-navbar-home,
+  .header-navbar-login,
+  .header-navbar-about {
+    padding: 0 16px;
+  }
+  .frame { flex-direction: column; gap: 1.5rem; align-items: stretch; }
+  .btn-mulai { width: 100%; text-align: center; }
 }
